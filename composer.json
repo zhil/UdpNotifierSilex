@@ -8,7 +8,6 @@
     "email": "starsfm@gmail.com"
   }],
   "require": {
-    "silex/silex": ">=1.0 <=1.3",
     "zhil/udp-notifier": "*"
   },
   "autoload": {
