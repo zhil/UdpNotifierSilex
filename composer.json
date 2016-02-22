@@ -1,0 +1,17 @@
+{
+  "name": "zhil/UdpNotifierSilex",
+  "description": "Silex ServiceProvider for using UDP Notifier",
+  "keywords": ["silex", "udp", "push"],
+  "license": "MIT",
+  "authors": [{
+    "name": "Andrew Zhilin",
+    "email": "starsfm@gmail.com"
+  }],
+  "require": {
+    "silex/silex": ">=1.0 <=1.3",
+    "zhil/udpNotifier": "~2.4"
+  },
+  "autoload": {
+    "psr-0": { "Zhil\\UdpNotifier": "src" }
+  }
+}
