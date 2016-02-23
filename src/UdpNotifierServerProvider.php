@@ -14,7 +14,7 @@ class UdpNotifierServerProvider implements ServiceProviderInterface
         $app['zhil.udp_notifier.server'] = $app->protect(function ($handler) use ($app) {
             $loop = \React\EventLoop\Factory::create();
             $factory = new \React\Datagram\Factory($loop);
-            $factory->createServer('localhost:1234')->then(function (\React\Datagram\Socket $server) use ($app,$handler) {
+            $factory->createServer('0.0.0.0:1234')->then(function (\React\Datagram\Socket $server) use ($app,$handler) {
                 $server->on('message', function($message, $address, $server) use ($app,$handler) {
 //                    $server->send('hello ' . $address . '! echo: ' . $message, $address);
 //                    echo 'client ' . $address . ': ' . $message . PHP_EOL;
