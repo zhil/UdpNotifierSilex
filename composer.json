@@ -11,6 +11,6 @@
     "zhil/udp-notifier": "*"
   },
   "autoload": {
-    "psr-0": { "Zhil\\UdpNotifier\\Silex": "src" }
+    "psr-4": { "Zhil\\UdpNotifier\\Silex": "src" }
   }
 }
